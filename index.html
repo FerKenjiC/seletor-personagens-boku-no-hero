@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto DevQuest - Seletor de Personagens Boku no Hero Academia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="src/imagens/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/logo.png" alt="Logo Boku no Hero Academia" class="logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um Personagem</h1>
+
+            <ul class="lista-de-personagens">  
+                <li class="personagem selecionado" id="izuku_midoriya" data-name="Izuku Midoriya - Deku"
+                data-description="Embora tenha nascido sem dom, Izuku conseguiu chamar a atenção do lendário herói All Might, devido ao seu heroísmo inato, tornando-se seu aprendiz mais próximo, bem como um aluno da Classe 1-A do Colégio U.A.. 
+                All Might passou seu dom para Izuku, fazendo dele o nono portador do One For All. ">
+                    <img src="src/imagens/rosto/izuku_midoriya_rosto.jpg" alt="Personagem Izuku Midoriya">
+                </li>
+                
+                <li class="personagem" id="shoto_todoroki" data-name="Shoto Todoroki – Shoto"
+                data-description="Shoto Todoroki é filho do herói Endeavor.
+                Shoto tem uma personalidade fria e distante, decorrente a educação áspera que recebeu. Ele é bastante imutável durante suas batalhas, podendo ficar calmo mesmo enquanto luta contra vilões. Embora seja bruto em batalha, está bem ciente da ética do heroísmo, apenas desejando subjugar seus adversários.">
+                    <img src="src/imagens/rosto/shoto_todoroki_rosto.jpg" alt="Personagem Shoto Todoroki">
+                </li>
+                
+                <li class="personagem" id="katsuki_bakugou" data-name="Katsuki Bakugou – Dynamight"
+                data-description="Katsuki Bakugo é o rival do protagonista, Izuku Midoriya.
+                Katsuki é uma pessoa bastante grosseira, violenta, arrogante e agressiva e tem uma tendência ao bullying, assim como fazia com Izuku Midoriya, quem ele via como um obstáculo a ser superado, porém agora o trata como um rival.">
+                    <img src="src/imagens/rosto/katsuki_bakugou_rosto.jpg" alt="Personagem Katsuki Bakugou">
+                </li>
+                
+                <li class="personagem" id="ochako_uraraca" data-name="Ochaco Uraraka – Uravity"
+                data-description="Ochaco Uraraka é interesse romântico de Izuku Midoriya.
+                Ochaco é uma pessoa brilhante e animada que sempre tem pensamentos positivos, é muito harmoniosa e empática no geral, amigável com aqueles que acabou de conhecer, e sempre vai tentar ajudar ou defender alguém quando puder.">
+                    <img src="src/imagens/rosto/ochaco_uraraka_rosto.jpg" alt="Personagem Ochaco Uraraka">
+                </li>
+                
+                <li class="personagem" id="tsuyu_asui" data-name="Tsuyu Asui – Froppy"
+                data-description="Tsuyu é uma garota direta e descontraída que sempre fala o que está em sua mente e o que pensa sobre os outros. Ela prefere ser chamada de 'Tsu', mas ela afirma que só permite a pessoas que ela considera amigos que lhe chamem desta forma.">
+                    <img src="src/imagens/rosto/tsuyu_asui_rosto.jpg" alt="Personagem Tsuyu Asui">
+                </li>
+                
+                <li class="personagem" id="tenya_iida" data-name="Tenya Iida – Ingenium"
+                data-description="Tenya pode parecer severo, mas na verdade ele é uma pessoa muito direta, sincera, inteligente e nobre. Ele tende a levar tudo muito a sério, e por causa disso, ele tem o hábito de tirar conclusões precipitadas, depois falar com entusiasmo ou age com base em tais conclusões.">
+                    <img src="src/imagens/rosto/tenya_iida_rosto.jpg" alt="Personagem Tenya Iida">
+                </li>
+                
+                <li class="personagem" id="eijiro_kirishima" data-name="Eijiro Kirishima – Red Riot"
+                data-description="Eijiro é honesto e possui um bom coração. Em adição, ele é capaz de fazer amizade com grande parte das pessoas, ele é bastante dedicado aos seus amigos e está disposto a quebrar as regras e leis se for para salvar seus amigos, demonstrando arrependimentos se não for capaz de faze-los.">
+                    <img src="src/imagens/rosto/eijiro_kirishima_rosto.jpg" alt="Personagem Eijiro Kirishima">
+                </li>
+                
+                <li class="personagem" id="momo_yaoyorozu" data-name="Momo Yaoyorozu – Creaty"
+                data-description="Momo é uma pessoa muito inteligente e dedicada que age como um líder natural, por essas qualidades ela é a Vice-Presidente da Classe 1-A e entrou para a U.A por recomendações oficiais. Ela é geralmente muito equilibrada e calma mesmo em situações muito perigosas, mas ela não está acima de ficar em pânico.">
+                    <img src="src/imagens/rosto/momo_yaoyorozu_rosto.jpg" alt="Personagem Momo Yaoyorozu">
+                </li>
+                
+                <li class="personagem" id="fumikage_tokoyami" data-name="Fumikage Tokoyami – Tsukuyomi"
+                data-description="Tokoyami é sério, reservado e bem focado. Apesar de não falar muito, quando ele forma uma equipe com os outros se torna mais sociável, ajudando seus companheiros, reafirmando sua confiança neles e os agradecendo por seus esforços.">
+                    <img src="src/imagens/rosto/fumikage_tokoyami_rosto.jpg" alt="Personagem Fumikage Tokoyami">
+                </li>
+                
+                <li class="personagem" id="mina_ashido" data-name="Mina Ashido – Pinky / Alien Queen"
+                data-description="Mina é uma garota alegre e descontraída que exibe um sorriso no rosto a maior parte do tempo. Altamente sociável e excitável, ela adora sair com seus amigos e fica muito chateada quando lhe é negada a oportunidade de estar em uma reunião. Ela possui um forte senso de moda e gosta de fazer compras.">
+                    <img src="src/imagens/rosto/mina_ashido_rosto.jpg" alt="Personagem Mina Ashido">
+                </li>
+                
+                <li class="personagem" id="kyoka_jiro" data-name="Kyoka Jiro – Earphone Jack"
+                data-description="Kyoka tem uma personalidade pragmática, sem entusiasmo e provocadora que é mostrada principalmente para aqueles que ela considera irritantes, como seu colega de classe Denki Kaminari. Kyoka nem sempre é assim, pois ela gosta de se socializar com outras pessoas, caso em que ela é geralmente legal e amigável.">
+                    <img src="src/imagens/rosto/kuoka_jiro_rosto.jpg" alt="Personagem Kyoka Jiro">
+                </li>
+                
+                <li class="personagem" id="denki_kaminari" data-name="Denki Kaminari – Chargezuma"
+                data-description="Denki é um tanto flertador com as garotas de sua classe (e até as de outras classes), tentando se passar por um bom falador. Ele também é um pouco travesso, participando de brincadeiras ocasionalmente. No geral, parece que Denki tem interesse em parecer legal na frente dos outros, mas tem uma compreensão superficial de como fazê-lo.">
+                    <img src="src/imagens/rosto/denki_kaminari_rosto.jpg" alt="Personagem Denki Kaminari">
+                </li>
+                
+                <li class="personagem" id="yuga_aoyama" data-name="Yuga Aoyama – Can’t Stop Twinkling"
+                data-description="Yuga parece ser uma pessoa vaidosa e orgulhosa, pensando em si mesmo como superior ao resto de seus colegas de classe. Ele gosta de posar e gosta de chamar a atenção de quem está ao seu redor, apesar de ser frequentemente ignorado por seus colegas. ">
+                    <img src="src/imagens/rosto/yuga_aoyama_rosto.jpg" alt="Personagem Yuga Aoyama">
+                </li>
+                
+                <li class="personagem" id="mashirao_ojiro" data-name="Mashirao Ojiro – Tailman"
+                data-description="Mashirao tem uma atitude muito calma e nobre, bem como um sentido de dignidade muito profundo, o que o impede de aceitar resultados que não sente que obteve com as suas próprias capacidades. Ele também é descrito como um trabalhador esforçado  ">
+                    <img src="src/imagens/rosto/mashirao_ojiro_rosto.jpg" alt="Personagem Mashirao Ojiro">
+                </li>
+                
+                <li class="personagem" id="koji_koda" data-name="Koji Koda – Anima"
+                data-description="Contrariamente à sua aparência poderosa e bruta, Koji é uma pessoa muito tímida e quieta. Como tal, ele raramente fala e prefere usar a linguagem de sinais para se comunicar com seus colegas, tanto que Kyoka Jiro presumiu que ele era mudo. Ele também odeia a violência devido à sua natureza bondosa.">
+                    <img src="src/imagens/rosto/koji_koda_rosto.jpg" alt="Personagem Koji Koda">
+                </li>
+                
+                <li class="personagem" id="ribiki_sato" data-name="Ribiki Sato – Sugarman"
+                data-description="Ribiki Sato é surpreendentemente talentoso em fazer doces, conquistando seus colegas com sua comida. E todas as semanas nos dormitórios, Rikido faz doces e os compartilha com seus colegas, o que ele chama de “Hora do Açúcar”.">
+                    <img src="src/imagens/rosto/rikido_sato_rosto.jpg" alt="Personagem Ribiki Sato">
+                </li>
+                
+                <li class="personagem" id="mezo_shoji" data-name="Mezo Shoji – Tentakole"
+                data-description="Apesar de sua aparência assustadora, Mezo é uma pessoa muito amigável e gentil que trabalhará bem com qualquer pessoa. Ele não é o tipo de guardar rancor, não mostrando nenhuma má vontade para com aqueles que o prejudicam de má vontade. ">
+                    <img src="src/imagens/rosto/mezo_shoji_rosto.png" alt="Personagem Mezo Shoji">
+                </li>
+                
+                <li class="personagem" id="hanta_sero" data-name="Hanta Sero – Cellophane"
+                data-description="Sero é bem humorado e costuma fazer piadas com os colegas. No entanto, Hanta é um bravo herói em treinamento que deseja prosperar sozinho enquanto ajuda os outros a fazer o mesmo. Ele facilmente faz amizade com aqueles ao seu redor e mostra-se um cara muito descontraído.">
+                    <img src="src/imagens/rosto/hanta_sero_rosto.jpg" alt="Personagem Hanta Sero">
+                </li>
+                
+                <li class="personagem" id="toru_hagakure" data-name="Toru Hagakure – Invisible Girl"
+                data-description="Toru é uma garota alegre e descontraída que faz a maioria das coisas com uma atitude otimista, mesmo que seja manipulada para isso. Ela é muito ansiosa socialmente e parece gostar de fazer compras. Seu quarto sugere que ela gosta de pelúcias e outras coisas fofas.">
+                    <img src="src/imagens/rosto/toru_hagakure_rosto.png" alt="Personagem Toru Hagakure">
+                </li>
+                
+                <li class="personagem" id="minoru_mineta" data-name="Minoru Mineta – Grape Juice"
+                data-description="A personalidade de Mineta é totalmente pervertida, com pensamentos poluídos. O interesse de Minoru por mulheres é uma de suas motivações para se tornar um herói. Ele não tem vergonha dessas características, admitindo-as abertamente em voz alta.">
+                    <img src="src/imagens/rosto/minoru_mineta_rosto.jpg" alt="Personagem Minoru Mineta">
+                </li>
+            </ul>
+        </section>
+
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/uniforme/izuku_midoriya.webp" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Izuku Midoriya - Deku</h2>
+                <p class="descricao-personagem" id="descricao-personagem">
+                    Embora tenha nascido sem dom, Izuku conseguiu chamar a atenção do lendário herói All Might, devido ao seu heroísmo inato, tornando-se seu aprendiz mais próximo, bem como um aluno da Classe 1-A do Colégio U.A.. 
+                    All Might passou seu dom para Izuku, fazendo dele o nono portador do One For All.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="src/js/index.js"></script>
+</body>
+</html>
